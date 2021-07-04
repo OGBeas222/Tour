@@ -13,6 +13,8 @@
     &__search
       margin-left: auto
       max-width: 340px
+    &__menu-button
+      display: none
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -27,3 +29,22 @@
   .navbar
     &-menu, &__search, &__user
       display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      cursor: pointer
+      background-color: #fff
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+
+@media (max-width: 576px)
+  .logo
+    width: 99px
