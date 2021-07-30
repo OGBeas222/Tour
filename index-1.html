@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
@@ -24,9 +24,9 @@
                 </a>
                 <form action="#" class="search navbar__search">
                     <input type="text" class="search__input" placeholder="Search Location">
-                    <buttton class="search__button">
+                    <button class="search__button">
                         <img src="img/search.svg" alt="Icon/search">
-                    </buttton>
+                    </button>
                 </form>
 
                 <a href="#" class="user navbar__user">
@@ -108,12 +108,12 @@
                             <img src="img/Star.svg" alt="star">
                             <img src="img/Star.svg" alt="star">
                         </div>
-                        <h1 class="hotel-name">
+                        <h1 class="hotel-name  hotel-info__name  ">
                             GRAND HILTON HOTEL
                         </h1>
                         <span class="offer hotel-info__offer">Flesh offer</span>
                     </div>
-                    <p class="hotel-description">
+                    <p class="hotel-description hotel-info__description">
                         Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
                     </p>
                 </div>
@@ -125,8 +125,195 @@
                 <!-- /.hotel-info__right -->
             </div>
             <!-- /.hotel-info -->
+            <div class="hotel-grid">
+
+                <!-- Slider main container -->
+                <div class="swiper-container hotel-slider hotel__slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide hotel-slider__item">
+                            <img class="hotel-slider__image" src="img/slider33.jpg" alt="slider">
+                        </div>
+                        <div class="swiper-slide hotel-slider__item">
+                            <img class="hotel-slider__image" src="img/slider33.jpg" alt="slider">
+                        </div>
+                        <div class="swiper-slide hotel-slider__item">
+                            <img class="hotel-slider__image" src="img/slider33.jpg" alt="slider">
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                    <button class="hotel-slider__button hotel-slider__button--next"></button>
+
+
+                </div>
+
+                <div class="hotel-right">
+                    <div class="booking">
+                        <div class="booking__info">
+                            <div class="booking__price">
+                                <span class="booking__start">price starts as</span>
+                                <strong class="booking__tag">$ 8,500</strong>
+                                <span class="booking__per-room">per room / night</span>
+                                <!-- /.booking -->
+                            </div>
+                            <!-- /.price -->
+                            <div class="booking__room ">
+                                <div class="booking__text">
+                                    <img class="booking__icon " src="img/user.svg " alt="Icon: user ">
+                                    <span class="booking__description "> 2 x Guests  </span>
+                                </div>
+                                <div class="booking__text ">
+                                    <img class="booking__icons" src="img/home.svg " alt="Icon: home ">
+                                    <span class="booking__description "> 1 x Room  </span>
+                                </div>
+                            </div>
+                            <!-- booking-room -->
+                        </div>
+
+                        <div class="booking__call-center">
+                            <span class="booking__heading ">Quick Booking</span>
+                            <a class="booking__number " href="tel:12100 ">
+                                <img src="img/phone-call.svg " alt="phone-call ">
+                                <span class="booking__num ">12100</span>
+                            </a>
+                        </div>
+                        <!-- booking  -->
+                        <button class="button booking__button ">
+                    View Other Options
+                </button>
+                    </div>
+                    <!-- /.booking -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1919.7681122126658!2d98.29404795819926!3d7.890549893179383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sua!4v1626167182419!5m2!1sru!2sua"
+                            width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- /.map -->
+                </div>
+                <!-- hotel-right -->
+
+
+            </div>
+            <!-- /.hotel-grid -->
         </div>
     </section>
+
+    <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title newsletter__title">
+                subscribe to our
+                <span class="newsletter-title__strong">
+                Newsletter
+            </span>
+            </h2>
+
+            <form action="#" class="subcribe newsletter__subcribeh">
+                <input type="text" class="subcribe__input" placeholder="Your email adress">
+                <button class="subcribe__button">
+                    Send
+                </button>
+            </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class=" reviews__title "> What people think about us </h2>
+            <!-- Slider main container -->
+            <div class="swiper-container reviews-slider ">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img class="reviews-slider__avatar" src="img/profile.jpg" alt="Megan Fox">
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class=" reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad
+                                feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                                was a good experience and could recommend.
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__items -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img class="reviews-slider__avatar" src="img/profile-3.jpg" alt="Antonio Krupio">
+                                <h3 class="reviews-slider__username">Antonio Krupio</h3>
+                                <span class="reviews-slider__date">Stayed 31 Dec, 2017</span>
+                                <div class=" reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad
+                                feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+                                was a good experience and could recommend.
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__items -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img class="reviews-slider__avatar" src="img/profile-2.jpg" alt="Robert Gudron">
+                                <h3 class="reviews-slider__username">Robert Gudron</h3>
+                                <span class="reviews-slider__date">Stayed 03 Sep, 2015</span>
+                                <div class=" reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                    <img src="img/Star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur et, minima atque amet nemo minus perferendis officia hic officiis possimus commodi tempora earum, aliquid labore ratione consectetur temporibus, doloremque quisquam ducimus neque. Quisquam,
+                                voluptatem quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur alias impedit illo accusamus sed totam adipisci unde inventore facere deserunt! Harum odio eaque quaerat rem perspiciatis officiis
+                                praesentium assumenda, illo, ipsa aut voluptatibus. Sapiente.
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__items -->
+
+                    </div>
+                    <!-- /.swiper-slide -->
+                </div>
+                <!-- swiper-wrapper -->
+                <div class="reviews-slider__button reviews-slider__button--prev"></div>
+                <div class="reviews-slider__button reviews-slider__button--next"></div>
+            </div>
+            <!-- /.reviews-slider  -->
+        </div>
+    </section>
+    <!-- reviews -->
+    <script src="js/swiper-bundle.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
