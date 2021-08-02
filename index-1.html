@@ -355,7 +355,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <div class="footer__logo">
+                <div class="logo footer__logo">
                     <img src="../img2/vertical-logo.svg" alt="Logo: Best tour plan"></div>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title  ">ALL CATEGORIES </h3>
@@ -416,9 +416,9 @@
                         Social Network
                     </h3>
                     <div class="footer__social-link">
-                        <a href="#" class="footer__link"><img src="/img2/fb.svg" alt="facebook" class="footer__icon"></a>
-                        <a href="#" class="footer__link"><img src="/img2/yt.svg" alt="youtube" class="footer__icon"></a>
-                        <a href="#" class="footer__link"><img src="/img2/inst.svg" alt="instagramm" class="footer__icon"></a>
+                        <a href="#" class="footer__link"><img src="/img2/fb.svg" alt="facebook"></a>
+                        <a href="#" class="footer__link"><img src="/img2/yt.svg" alt="youtube"></a>
+                        <a href="#" class="footer__link"><img src="/img2/inst.svg" alt="instagramm"></a>
                     </div>
                 </div>
                 <!-- /.social-network -->
@@ -426,7 +426,7 @@
                     <h3 class="footer__title footer__legal">
                         LEGAL INFORMATION
                     </h3>
-                    <ul class="foooter__ul">
+                    <ul class="footer__ul">
                         <li class="footer__item">
                             <a href="" class="footer__link">Terms & Conditions</a>
                         </li>
@@ -443,29 +443,36 @@
                 </div>
                 <!-- /.footer-list -->
                 <div class="footer__contacts-details">
-                    <h3 class="footer__title">Contact Details</h3>
+                    <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
                     <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
                     <ul class="footer__ul">
-                        <li class="footer__item">
-                            <img src="/img2/map-marker.svg" alt="map">
+                        <li class="footer__item  footer__item--mb2">
+                            <div class="footer__icon-wrapper"> <img src="/img2/map-marker.svg" alt="map" /> </div>
+                            9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+
                         </li>
-                        <li class="footer__item"><img src="/img2/phone-call.svg" alt="map">Tel (business hours) : 269 1500 </br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</br> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                        <li class="footer__item  footer__item--mb2">
+                            <div class="footer__icon-wrapper">
+                                <img src="/img2/phone-call.svg" alt="map" /> </div>
+
+                            Tel (business hours) : 269 1500 </br>
+                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</br>
+                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                         </li>
-                        <li class="footer__item"><img src="/img2/email.svg" alt="map"> cherly.lawson@example.com
+                        <li class="footer__item footer__item--mb2"><img class="footer__icon-wrapper" src="/img2/email.svg" alt="map" /> cherly.lawson@example.com
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contacts-details -->
                 <div class="footer__contacts-form">
-                    <h3 class="footer__title">Send us a message</h3>
+                    <h3 class="footer__title footer__title--mb-3 ">Send us a message</h3>
                     <form action="#" class="footer__form">
                         <input type="text" class="input footer__input" placeholder="Your Full Name*">
                         <input type="text" class="input footer__input" placeholder="Phone Number*">
                     </form>
-                    <textarea class="footer__message" placeholder="message" cols="50" rows="10"></textarea>
-                    <button class="button footer__button"></button>
-                    <span class="footer__info"></span>
+                    <textarea class="footer__message" placeholder="message" cols="50" rows="10" readonly></textarea>
+                    <button class="button footer__button">Send</button>
+                    <span class="footer__info"> * Required Fields</span>
                 </div>
                 <!-- /.footer__contacts-form -->
             </div>
