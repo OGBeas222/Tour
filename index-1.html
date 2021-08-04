@@ -16,20 +16,20 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile__fixed">
         <div class="container">
             <div class="navbar-top">
                 <a class="logo" href="">
                     <img class="logo__image" src="img/logo-tourplan.svg" alt="Logo : Best Tour Plan">
                 </a>
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile_hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon/search">
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user--mobile_hidden">
                     <img src="img/user-avatar.jpg" alt="avatar:Nathan" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -46,6 +46,20 @@
         <div class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
+                    <li class="navbar-menu__item navbar-menu__item--mobile_visible ">
+                        <a href="#" class="user navbar__user navbar__user--mobile_visible">
+                            <img src="img/user-avatar.jpg" alt="avatar:Nathan" class="user__avatar">
+                            <span class="user__name user__name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar-menu__item  navbar-menu__item--mobile_visible">
+                        <form action="#" class="search navbar__search  navbar__search--mobile_visible">
+                            <input type="text" class="search__input" placeholder="Search Location">
+                            <button class="search__button">
+                        <img src="img/search.svg" alt="Icon/search">
+                                </button>
+                        </form>
+                    </li>
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">All Deals</a>
                     </li>
@@ -208,7 +222,7 @@
             </span>
             </h2>
 
-            <form action="#" class="subcribe newsletter__subcribeh">
+            <form action="#" class="subcribe newsletter__subcribe">
                 <input type="text" class="subcribe__input" placeholder="Your email adress">
                 <button class="subcribe__button">
                     Send
@@ -316,7 +330,7 @@
     <section class="activities">
         <div class="container">
 
-            <h2 class="activities__title">
+            <h2 class="activities__title--mb1">
                 Other Activities
             </h2>
 
@@ -355,7 +369,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <div class="logo footer__logo">
+                <div class="footer__logo logo ">
                     <img src="../img2/vertical-logo.svg" alt="Logo: Best tour plan"></div>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title  ">ALL CATEGORIES </h3>
@@ -411,19 +425,10 @@
 
                 </div>
                 <!-- /.footer-list-2 -->
-                <div class="footer__social-network">
-                    <h3 class="footer__title footer__title--inline">
-                        Social Network
-                    </h3>
-                    <div class="footer__social-link">
-                        <a href="#" class="footer__link"><img src="/img2/fb.svg" alt="facebook"></a>
-                        <a href="#" class="footer__link"><img src="/img2/yt.svg" alt="youtube"></a>
-                        <a href="#" class="footer__link"><img src="/img2/inst.svg" alt="instagramm"></a>
-                    </div>
-                </div>
+
                 <!-- /.social-network -->
-                <div class="footer__list">
-                    <h3 class="footer__title footer__legal">
+                <div class="footer__list footer__legal ">
+                    <h3 class="footer__title ">
                         LEGAL INFORMATION
                     </h3>
                     <ul class="footer__ul">
@@ -440,6 +445,16 @@
                             <a href="" class="footer__link">Privacy</a>
                         </li>
                     </ul>
+                </div>
+                <div class="footer__social-network ">
+                    <h3 class="footer__title footer__title--inline">
+                        Social Network
+                    </h3>
+                    <div class="footer__social-link">
+                        <a href="#" class="footer__link"><img src="/img2/fb.svg" alt="facebook"></a>
+                        <a href="#" class="footer__link"><img src="/img2/yt.svg" alt="youtube"></a>
+                        <a href="#" class="footer__link"><img src="/img2/inst.svg" alt="instagramm"></a>
+                    </div>
                 </div>
                 <!-- /.footer-list -->
                 <div class="footer__contacts-details">
@@ -467,12 +482,13 @@
                 <div class="footer__contacts-form">
                     <h3 class="footer__title footer__title--mb-3 ">Send us a message</h3>
                     <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
+                        <input class=" footer__input input " type="text" placeholder="Your Full Name*">
+                        <input class=" footer__input input " type="text" placeholder="Phone Number*">
                     </form>
-                    <textarea class="footer__message" placeholder="message" cols="50" rows="10" readonly></textarea>
-                    <button class="button footer__button">Send</button>
-                    <span class="footer__info"> * Required Fields</span>
+                    <div class="re-text"><textarea class="footer__message footer_area" placeholder="Message" cols="30" rows="10" readonly="readonly"></textarea></div>
+                    <div class="footer__info-1">
+                        <button class="button footer__button">Send</button>
+                        <span class="footer__info"> *&nbsp;Required&nbsp;Fields</span></div>
                 </div>
                 <!-- /.footer__contacts-form -->
             </div>

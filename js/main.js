@@ -33,3 +33,11 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     speed: 315,
 
 });
+
+var menuButton = document.querySelector('.menu-button')
+menuButton.addEventListener("click", function() {
+    console.log("click on button");
+    document
+        .querySelector(".navbar-bottom")
+        .classList.toggle('navbar-bottom--visible');
+});
